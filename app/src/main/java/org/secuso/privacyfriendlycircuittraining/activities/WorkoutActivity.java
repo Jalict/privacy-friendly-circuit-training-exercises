@@ -549,7 +549,7 @@ public class WorkoutActivity extends AppCompatActivity {
             timerService.setIsAppInBackground(false);
         }
         updateGUI();
-        registerReceiver(timeReceiver, new IntentFilter(TimerService.COUNTDOWN_BROADCAST));
+        ContextCompat.registerReceiver(this, timeReceiver, new IntentFilter(TimerService.COUNTDOWN_BROADCAST), ContextCompat.RECEIVER_EXPORTED);
     }
 
     /**
