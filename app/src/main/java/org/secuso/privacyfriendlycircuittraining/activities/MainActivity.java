@@ -57,7 +57,7 @@ public class MainActivity extends BaseActivity {
 
     // CONFIGURE TIMER VARIABLES HERE
     // Max and min values for the workout and rest timer as well as the sets
-    private static final int workoutMaxTime = 300; // 5 min
+    private static final int workoutMaxTime = 1800; // 30 min
     private static final int workoutMinTime = 10; // 10 sec
     private static final int restMaxTime = 300; // 5 min
     private static final int restMinTime = 10; // 10 sec
@@ -65,7 +65,7 @@ public class MainActivity extends BaseActivity {
     private static final int minSets = 1;
 
     // Block periodization values and Button
-    private final long blockPeriodizationTimeMax = 300; // 5:00 min
+    private final long blockPeriodizationTimeMax = 1800; // 30:00 min
     private boolean isBlockPeriodization = false;
     private long blockPeriodizationTime = 0;
     private int blockPeriodizationSets = 0;
